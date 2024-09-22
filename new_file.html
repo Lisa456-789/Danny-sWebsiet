@@ -2,13 +2,39 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>丹丹</title>
+		<title></title>
+		<!-- link引入外部样式表 -->
+		<style>
+			.red  {
+				width: 150px;
+				height: 100px;
+				background-color: crimson;
+				
+			}
+			
+			.wall {
+				width: 600px;
+				height: 50px;
+				background-color: blue;
+			}
+			 h2 {
+				color: aliceblue;
+				background-color: aqua;
+			}
+			p {
+				font-size: 30px;
+				font-family:  Helvetica, sans-serif;
+			}
+		</style>
+		
 	</head>
 	<body>
-		<h1>丹丹周报<h1>
-		<hr size="1" color="red" width="100%"/>
-		<h2>丹丹人自己的报纸  每周五各板块更新                           <a href="input.html">登录</a>     <a href="zhuce.html">注册</a></h2>
-		<hr />
+		<div class="red"><h1>丹丹周报<h1></div>
+		<br />
+		<p>Danny Weekly News</p>
+		<hr size="3" color="#000080" width="100%"/>
+		<div><h2>丹丹人自己的报纸  每周五各板块更新                           <a href="input.html">登录</a>     <a href="zhuce.html">注册</a></h2></div>
+		<hr size="3" color="#000080"/>
         <dl>
 			<dt>服务中心</dt>
 			<dd>周若君文选集》》》<a href="./zrj.html" target="_blank"/>周若君文选</a></dd>
@@ -16,6 +42,12 @@
 			<dd>丹丹我的世界服务器》》》<a href="./dandna serve.html" target="_blank"/>丹丹服务器</a></dd>
 			<dd>祝梓超小说 》》》<a href="./zzc.html" target="_blank"/>祝梓超小说集</a></dd>
 		</dl>
-		<hr />
+		<hr size="3" color="#B22222"/>
+		<h1>丹丹论坛</h1><a href="suggestion.html">丹丹论坛</a>
+		<em>登陆后可发布作品</em>
+		<!-- 使用行内式写法 -->
+		<div style="color: blue;">欢迎加入丹丹大家庭</div>
+		<hr size="3" color="#B22222"/>
 	</body>
 </html>
+<!-- div独占一行，<span id=""占用多行>

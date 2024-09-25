@@ -1,18 +1,143 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title></title>
-		<style>
-			
-		</style>
-	</head><form action="">
-	<h1>登录丹丹，享受未来</h1>
-	<body>输入账号或者超级账号：<input type="text" />
-	<br />
-	</body>输入密码或超级密码 ：<input type="text" />
-	<br /><br />
-	<button type="button">确认</button>
-    <button type="reset">重置</button>
-	</form>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+	  @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+	  
+	  /* 去掉所有默认边距/填充，设置字体 */
+	  body {
+	    box-sizing: border-box;
+	    margin: 0;
+	    padding: 0;
+	    background-color: white;
+	    font-family: "lato", sans-serif;
+	  }
+	  /* 将表单水平和垂直放置在中心，将其高度设置为视口高度的 100% */
+	  
+	  .signupFrm {
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    height: 100vh;
+	  }
+	  .form {
+	    background-color: white;
+	    width: 400px;
+	    border-radius: 8px;
+	    padding: 20px 40px;
+	    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+	  }
+	  
+	  .title {
+	    font-size: 40px;
+	    margin-bottom: 50px;
+	  }
+	  .inputContainer {
+	    position: relative;
+	    height: 45px;
+	    width: 90%;
+	    margin-bottom: 17px;
+	  }
+	  /* 设置输入框的样式 */
+	  
+	  .input {
+	    position: absolute;
+	    top: 0px;
+	    left: 0px;
+	    height: 100%;
+	    width: 100%;
+	    border: 1px solid #DADCE0;
+	    border-radius: 7px;
+	    font-size: 16px;
+	    padding: 0 20px;
+	    outline: none;
+	    background: none;
+	    z-index: 1;
+	  }
+	  
+	  /* 隐藏占位符文本（a）*/
+	  
+	  ::placeholder {
+	    color: transparent;
+	  }
+	  /* 设置文本标签的样式 */
+	  
+	  .label {
+	    position: absolute;
+	    top: 15px;
+	    left: 15px;
+	    padding: 0 4px;
+	    background-color: white;
+	    color: #DADCE0;
+	    font-size: 16px;
+	    transition: 0.5s;
+	    z-index: 0;
+	  }
+	  .submitBtn {
+	    display: block;
+	    margin-left: auto;
+	    padding: 15px 30px;
+	    border: none;
+	    background-color: purple;
+	    color: white;
+	    border-radius: 6px;
+	    cursor: pointer;
+	    font-size: 16px;
+	    margin-top: 30px;
+	  }
+	  
+	  .submitBtn:hover {
+	    background-color: #9867C5;
+	    transform: translateY(-2px);
+	  }
+	  .input:focus + .label {
+	    top: -7px;
+	    left: 3px;
+	    z-index: 10;
+	    font-size: 14px;
+	    font-weight: 600;
+	    color: purple;
+	  }
+	  .input:focus {
+	    border: 2px solid purple;
+	  }
+	  .input:not(:placeholder-shown)+ .label {
+	    top: -7px;
+	    left: 3px;
+	    z-index: 10;
+	    font-size: 14px;
+	    font-weight: 600;
+	  }
+  </style>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="signupFrm">
+	    <form action="" class="form">
+	      <h1 class="title">登录丹丹，享受未来</h1>
+	
+	      <div class="inputContainer">
+	        <input type="text" class="input" placeholder="a">
+	        <label for="" class="label">邮箱地址</label>
+	      </div>
+	
+	      <div class="inputContainer">
+	        <input type="text" class="input" placeholder="a">
+	        <label for="" class="label">用户名</label>
+	      </div>
+	
+	      <div class="inputContainer">
+	        <input type="text" class="input" placeholder="a">
+	        <label for="" class="label">密码</label>
+	      </div>
+	
+	      <input type="submit" class="submitBtn" value="登录">
+	    </form>
+	  </div>
+
+</body>
 </html>

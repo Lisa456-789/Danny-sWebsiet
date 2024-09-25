@@ -2,51 +2,116 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title></title>
+		<title>丹丹之家</title>
 		<!-- link引入外部样式表 -->
 		<style>
-			.red  {
-				width: 150px;
-				height: 100px;
-				background-color: crimson;
-				
+			/* 设置 topnav 链接的样式 */
+			.topnav a {
+			  float: left;
+			  display: block;
+			  color: #2F4F4F;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
 			}
 			
-			.wall {
-				width: 600px;
-				height: 50px;
-				background-color: blue;
+			/* 改变鼠标悬停时的颜色 */
+			.topnav a:hover {
+			  background-color: #ddd;
+			  color: black;
 			}
+			
 			 h2 {
 				color: aliceblue;
-				background-color: aqua;
+				background-color: 	#F4A460;
 			}
 			p {
 				font-size: 30px;
 				font-family:  Helvetica, sans-serif;
+				text-align: center;
+				
+			
 			}
+			h1 {
+				text-align: center;
+			}
+			.p1 {
+				font-family: Lucida Handwriting;
+				font-size: 30px;
+				background-color: #FFDEAD;
+				
+			}
+			.p3 {
+				
+			}
+			p.one {
+				 border-style: double;
+				  border-width: 15px;
+				  border-radius: 5px;
+			}
+			  .header {
+			    background-color: #4682B4;
+			    padding: 20px;
+			    text-align: center;
+			  }
+			  .column {
+			    float: left;
+			    width: 30%;
+			    padding: 15px;
+				
+			  }
+			  
+			  /* 清除列之后的浮动 */
+			  .row:after {
+			    content: "";
+			    display: table;
+			    clear: both;
+			  }
+			  
+			  /* 响应式布局 - 创建堆叠而非并排的三列 */
+			  @media screen and (max-width:600px) {
+			    .column {
+			      width: 100%;
+			    }
+			  }
 		</style>
 		
 	</head>
-	<body>
-		<div class="red"><h1>丹丹周报<h1></div>
+		
+	<body background="">  
+	      
+		<div class="header"><h1>丹丹周报<h1>
 		<br />
-		<p>Danny Weekly News</p>
+		<h2>欢迎加入丹丹大家庭</h2>
+		</div>
+		<p class="p1">Danny Weekly News</p>
 		<hr size="3" color="#000080" width="100%"/>
-		<div><h2>丹丹人自己的报纸  每周五各板块更新                           <a href="input.html">登录</a>     <a href="zhuce.html">注册</a></h2></div>
-		<hr size="3" color="#000080"/>
-        <dl>
-			<dt>服务中心</dt>
-			<dd>周若君文选集》》》<a href="./zrj.html" target="_blank"/>周若君文选</a></dd>
-			<dd>王鸣禹摄影集》》》<a href="./wmy.html" target="_blank"/>王鸣禹摄影</a></dd>
-			<dd>丹丹我的世界服务器》》》<a href="./dandna serve.html" target="_blank"/>丹丹服务器</a></dd>
-			<dd>祝梓超小说 》》》<a href="./zzc.html" target="_blank"/>祝梓超小说集</a></dd>
-		</dl>
-		<hr size="3" color="#B22222"/>
-		<h1>丹丹论坛</h1><a href="suggestion.html">丹丹论坛</a>
-		<em>登陆后可发布作品</em>
-		<!-- 使用行内式写法 -->
-		<div style="color: blue;">欢迎加入丹丹大家庭</div>
+		<div class="topnav">
+		  <a href="./zrj.html">周若君文选</a>
+		  <a href="./wmy.html">王鸣禹摄影</a>
+		  <a href="./dandna serve.html">丹丹服务器</a>
+		  <a href="./zzc.html">祝梓超小说集</a>
+		  <a href="./suggestion.html">丹丹论坛</a>
+		</div>
+		<br /><br />
+		<div><h2>丹丹人自己的报纸  每周五各板块更新  <a href="input.html">登录</a>     <a href="zhuce.html">注册</a></h2></div>
+		<div class="row">
+		  <div class="column">
+		    <h2>王鸣禹摄影集</h2>
+		    <p>王鸣禹，2023年进入摄影圈，现在天津工业大学软件学院学生会宣传部任职，使用器材有佳能850D，尼康z7ii，镜头有24-70mm f/4，70-200mm f/2.8，欢迎找我约拍！邮箱：1509344041@qq.com</p>
+		  </div>
+		  
+		  <div class="column">
+		    <h2>周若君文学</h2>
+		    <p>周若君，一位杰出的文学家，以其深刻的抒情散文和引人入胜的中长篇小说在文坛上享有盛誉。他的作品以其独特的文学风格和深刻的人文关怀而广受读者和评论家的赞誉。</p>
+		  </div>
+		  
+		  <div class="column">
+		    <h2>祝梓超小说</h2>
+		    <p>祝梓超，一位在网络文学领域中独树一帜的玄幻类网络小说作家，以其精湛的文笔和丰富的想象力在读者中享有极高的声誉。他的作品《丹丹往事》和《不再熟悉的城市》不仅在国内受到广泛欢迎，更是在国际舞台上屡获殊荣，展现了中国网络文学的魅力和影响力。</p>
+		  </div>
+		</div>
+		<br />
 		<hr size="3" color="#B22222"/>
 	</body>
 </html>

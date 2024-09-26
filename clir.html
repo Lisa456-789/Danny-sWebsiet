@@ -1,0 +1,41 @@
+<html>
+	<head>
+	<style type="text/css">
+		*{background-color:green;}
+	
+		#lunbo{ width:600px; height:600px;position:relative;left:100px;top:50px;} //定义轮播图片所显示的位置
+		ul{width:100%; height:100%; position:relative;left:0px;top:0px}//为ul标签设置所在区域有
+		li{width:100%; height:100%; position:absolute; left:0px;top:0px;}//为li标签设置所在区域有
+		img{ width:100%; height:600px;}//为图片定义大小，并且是图片重合。
+	</style>
+</head>
+<body>
+	<div id="lunbo">
+		<ul id="shidian_img"  >
+			<li><img src="" /></li>
+			<li><img src="0123.png" /></li>
+			<li><img src="02302.png" /></li>
+			<li><img src="2024-09-24_21.47.21_x-2560_z-3072.png" /></li>
+		</ul>
+	</div>
+	<script>
+	  	index=0;
+		function show_img(){
+	             imgs=document.getElementById("shidian_img").children; //获取所以图片 并且存储到数组imgs数组里
+	             for(i =0; i<imgs.length;i++){                               
+	                      imgs[i].style.display="none";
+	            
+	             }                                                            //循环获取到imgs里面的元素，并且把它们隐藏设置为“”none“”
+	             imgs[index].style.display ="block";   //当所有元素都隐藏了，在显示当前index所指的图片。
+	          
+	             index ++;
+	             if(index >= imgs.length){
+	                   index=0;
+	                                
+	              }                                //判断index是否大于imgs的长度，等于imgs的长度后在重新赋予它初始值0:
+	                        
+		}
+	 	timer=setInterval(show_img,1000); //建立周期定时器。
+	</script>
+</body>
+</html>

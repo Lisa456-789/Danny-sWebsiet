@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章展示页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #4682B4;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #4682B4;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+        nav a:hover {
+            background: #4682B4;
+        }
+        .article {
+            background: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .article-title {
+            color: #4682B4;
+            margin-bottom: 10px;
+        }
+        .article-date {
+            color: #4682B4;
+            margin-bottom: 20px;
+        }
+        .article-content {
+            line-height: 1.6;
+        }
+        footer {
+            background: #4682B4;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>我的文章</h1>
+    </header>
+    <div class="container">
+        <!-- 文章1 -->
+        <div class="article">
+            <h2 class="article-title"><a href="text/new_file.html">网络技术对社会影响案例与网安从业者的社会责任总结</a></h2>
+            <p class="article-date">发布日期：2024-11-03</p>
+            <div class="article-content">
+                <p>网络安全行业发展面临的挑战与发展趋势</p>
+            </div>
+        </div>
+        <!-- 文章2 -->
+        <div class="article">
+            <h2 class="article-title"><a href="./text/text1.html">网络安全前沿技术与产品总结</a></h2>
+            <p class="article-date">发布日期：2024-10-03</p>
+            <div class="article-content">
+                <p>互联网技术与网络安全技术</p>
+            </div>
+        </div>
+        <!-- 更多文章 -->
+		<div class="article">
+		    <h2 class="article-title">文章标题3</h2>
+		    <p class="article-date">发布日期：2024-10-03</p>
+		    <div class="article-content">
+		        <p>这里是文章内容的摘要或者全文...</p>
+		    </div>
+		</div>
+		<div class="article">
+		    <h2 class="article-title">文章标题4</h2>
+		    <p class="article-date">发布日期：2024-10-03</p>
+		    <div class="article-content">
+		        <p>这里是文章内容的摘要或者全文...</p>
+		    </div>
+		</div>
+    </div>
+    <footer>
+        <p>版权所有 &copy; 2024 我的个人博客</p>
+    </footer>
+</body>
+</html>

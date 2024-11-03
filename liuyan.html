@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>个人博客留言板</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        留言板 {
+            background: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            margin-top: 20px;
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input[type="text"],
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .form-group textarea {
+            resize: vertical;
+        }
+        .form-group button {
+            padding: 10px 20px;
+            background: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background: #4cae4c;
+        }
+		footer {
+		    background-color: #4682B4;  
+		    color: white;  
+		    width: 100%;  
+		    text-align: center;  
+		    padding: 1em 0;  
+		}  
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="留言板">
+            <h1>留言板</h1>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">姓名:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">电子邮件:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">留言:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">提交留言</button>
+                </div>
+            </form>
+        </div>
+    </div>
+	<footer>
+	    <p>&copy; 2023 我的照片展示网站. 版权所有.</p>  
+	</footer> 
+</body>
+</html>
